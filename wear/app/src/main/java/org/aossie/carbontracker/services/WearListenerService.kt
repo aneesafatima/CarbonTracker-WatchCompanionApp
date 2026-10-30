@@ -186,8 +186,7 @@ class WearListenerService : WearableListenerService() {
                             return@forEach
                         }
 
-                        if (acknowledgement.lastUpdated <= 0L ||
-                            acknowledgement.lastUpdated > System.currentTimeMillis()
+                        if (acknowledgement.lastUpdated <= 0L
                         ) {
                             Log.w(
                                 TAG,
